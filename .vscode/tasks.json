@@ -8,7 +8,8 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 // "${file}",
-                "${workspaceFolder}\\02_Factory_mode\\02_factory_function_mode\\*.cpp",
+                "${workspaceFolder}\\02_Factory_mode\\03_abstract_factory_mode\\*.cpp",
+                "${workspaceFolder}\\02_Factory_mode\\Clothes\\*.cpp",
                 "${workspaceFolder}\\02_Factory_mode\\Shoes\\*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
