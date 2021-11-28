@@ -1,4 +1,5 @@
 #include "Singleton.h"
+#include <iostream>
 
 Singleton *Singleton::instance = nullptr;
 std::mutex Singleton::mMutex;

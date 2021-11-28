@@ -1,4 +1,6 @@
 #include "Factory.h"
+#include "../Shoes/NikeShoes.h"
+#include "../Shoes/AdidasShoes.h"
 
 Shoes *Factory::CreateProduct(SHOES_TYPE shoes_type)
 {
