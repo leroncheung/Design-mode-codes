@@ -1,4 +1,5 @@
 #include "Singleton.h"
+#include <iostream>
 
 // 初始化静态成员变量
 Singleton *Singleton::instance = nullptr;

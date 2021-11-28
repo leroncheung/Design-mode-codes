@@ -1,5 +1,4 @@
-#include "../Shoes/NikeShoes.h"
-#include "../Shoes/AdidasShoes.h"
+#include "../Shoes/Shoes.h"
 
 #ifndef _FACTORY_H_
 #define _FACTORY_H_

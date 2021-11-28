@@ -1,5 +1,7 @@
-#include <iostream>
 #include <mutex>
+
+#ifndef _SINGLETON_H_
+#define _SINGLETON_H_
 
 class Singleton {
 public:
@@ -17,3 +19,5 @@ private:
     static Singleton *instance;
     static std::mutex mMutex;
 };
+
+#endif

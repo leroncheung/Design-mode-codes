@@ -1,4 +1,5 @@
-#include <iostream>
+#ifndef _SINGLETON_H_
+#define _SINGLETON_H_
 
 // 单例类：内部包含静态实例化对象，对外提供获取和删除该对象的静态函数
 class Singleton
@@ -17,3 +18,5 @@ private:
 
     static Singleton *instance;
 };
+
+#endif
