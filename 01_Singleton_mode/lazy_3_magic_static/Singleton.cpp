@@ -7,7 +7,7 @@ Singleton &Singleton::GetInstance()
     return instance;
 }
 
-void Singleton::func()
+inline void Singleton::func()
 {
     std::cout << "hello func()" << std::endl;
 }

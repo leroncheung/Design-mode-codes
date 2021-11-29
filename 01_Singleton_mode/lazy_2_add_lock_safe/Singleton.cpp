@@ -28,7 +28,7 @@ void Singleton::DeleteInstance()
     }
 }
 
-void Singleton::func()
+inline void Singleton::func()
 {
     std::cout << "hello func()" << std::endl;
 }

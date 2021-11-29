@@ -2,10 +2,10 @@
 #include "../Clothes/NikeClothe.h"
 #include "../Shoes/NikeShoes.h"
 
-Clothe* NikeFactory::CreateClothe() {
+inline Clothe* NikeFactory::CreateClothe() {
     return new NikeClothe();
 }
 
-Shoes* NikeFactory::CreateShoes() {
+inline Shoes* NikeFactory::CreateShoes() {
     return new NikeShoes();
 }
