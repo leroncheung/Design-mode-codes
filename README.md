@@ -1,2 +1,2 @@
 # Design-mode-codes
-Some design mode written by c plus plus code
+> Some design mode codes written by c plus plus
