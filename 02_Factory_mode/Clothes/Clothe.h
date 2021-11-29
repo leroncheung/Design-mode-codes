@@ -6,7 +6,7 @@ class Clothe
 public:
     Clothe() = default;
     virtual ~Clothe() = default;
-    virtual void Show() = 0;
+    virtual void Show() const = 0;
 };
 
 #endif

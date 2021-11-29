@@ -7,7 +7,7 @@ public:
     static Singleton *GetInstance();
     static void DeleteInstance();
 
-    void func();
+    void func() const;
 
 private:
     Singleton() = default;

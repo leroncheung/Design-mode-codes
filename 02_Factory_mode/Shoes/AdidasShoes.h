@@ -8,7 +8,7 @@ class AdidasShoes : public Shoes
 public:
     AdidasShoes() = default;
     ~AdidasShoes() = default;
-    void Show();
+    void Show() const;
 };
 
 #endif

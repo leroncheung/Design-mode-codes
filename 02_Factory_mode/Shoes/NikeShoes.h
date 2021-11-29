@@ -8,7 +8,7 @@ public:
     NikeShoes() = default;
     ~NikeShoes() = default;
 
-    void Show();
+    void Show() const;
 };
 
 #endif

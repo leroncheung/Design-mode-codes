@@ -7,7 +7,7 @@ class NikeClothe : public Clothe {
 public:
     NikeClothe() = default;
     ~NikeClothe() = default;
-    void Show();
+    void Show() const;
 };
 
 #endif

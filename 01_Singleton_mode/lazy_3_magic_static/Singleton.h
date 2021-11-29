@@ -6,7 +6,7 @@ class Singleton
 public:
     static Singleton &GetInstance(); // 引用返回
 
-    void func();
+    void func() const;
 
 private:
     Singleton() = default;
