@@ -1,4 +1,13 @@
-#include "Shoes.h"
+/**
+ * @file AdidasShoes.h
+ * @author leroncheung
+ * @brief 
+ * @version 0.1
+ * @date 2021-11-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #ifndef _ADIDASSHOES_H_
 #define _ADIDASSHOES_H_

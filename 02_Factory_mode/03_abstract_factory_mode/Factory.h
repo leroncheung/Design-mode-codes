@@ -1,8 +1,19 @@
-#include "../Clothes/Clothe.h"
-#include "../Shoes/Shoes.h"
+/**
+ * @file Factory.h
+ * @author leroncheung
+ * @brief 
+ * @version 0.1
+ * @date 2021-11-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #ifndef _FACTORY_H_
 #define _FACTORY_H_
+
+#include "../Clothes/Clothe.h"
+#include "../Shoes/Shoes.h"
 
 class Factory
 {

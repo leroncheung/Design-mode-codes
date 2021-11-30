@@ -1,3 +1,14 @@
+/**
+ * @file Clothe.h
+ * @author leroncheung
+ * @brief 
+ * @version 0.1
+ * @date 2021-11-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef _CLOTHE_H_
 #define _CLOTHE_H_
 
