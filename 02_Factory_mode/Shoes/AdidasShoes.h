@@ -12,6 +12,8 @@
 #ifndef _ADIDASSHOES_H_
 #define _ADIDASSHOES_H_
 
+#include "Shoes.h"
+
 class AdidasShoes : public Shoes
 {
 public:
