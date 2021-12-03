@@ -8,8 +8,7 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 // "${file}",
-                "${workspaceFolder}\\02_Factory_mode\\05_register_singleton_factory_mode\\*.cpp",
-                "${workspaceFolder}\\02_Factory_mode\\Shoes\\*.cpp",
+                "${workspaceFolder}\\03_Observer_mode\\*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
