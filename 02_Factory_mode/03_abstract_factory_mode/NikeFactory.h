@@ -18,8 +18,8 @@ class NikeFactory : public Factory {
 public:
     NikeFactory() = default;
     ~NikeFactory() = default;
-    Clothe *CreateClothe();
-    Shoes *CreateShoes();
+    Clothe *CreateClothe() override;
+    Shoes *CreateShoes() override;
 };
 
 #endif

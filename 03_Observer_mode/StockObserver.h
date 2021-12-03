@@ -17,7 +17,7 @@
 class StockObserver : public Observer {
 public:
     StockObserver(std::string name, Subject* sub) : Observer(name, sub) {}
-    void Update();
+    void Update() override;
 };
 
 #endif

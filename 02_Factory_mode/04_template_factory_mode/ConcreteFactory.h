@@ -20,7 +20,7 @@ class ConcreteFactory : public AbstractFactory<AbstractProduct>
 public:
     ConcreteFactory() = default;
     ~ConcreteFactory() = default;
-    AbstractProduct *CreateProduct();
+    AbstractProduct *CreateProduct() override;
 };
 
 #endif

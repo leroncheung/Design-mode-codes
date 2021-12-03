@@ -18,7 +18,7 @@ class Secretary : public Subject {
 public:
     void attach(Observer *obs);
     void detach(Observer *obs);
-    void Notify();
+    void Notify() override;
 };
 
 #endif

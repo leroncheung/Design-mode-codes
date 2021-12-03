@@ -17,7 +17,7 @@
 class NBAObserver : public Observer {
 public:
     NBAObserver(std::string name, Subject* sub) : Observer(name, sub) {}
-    void Update();
+    void Update() override;
 };
 
 #endif

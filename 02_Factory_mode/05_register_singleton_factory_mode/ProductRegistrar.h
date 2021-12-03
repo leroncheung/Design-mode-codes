@@ -20,7 +20,7 @@ class ProductRegistrar : public IProductRegistrar<AbstractProduct>
 public:
     ~ProductRegistrar() = default;
     explicit ProductRegistrar(std::string name);
-    AbstractProduct *CreateProduct();
+    AbstractProduct *CreateProduct() override;
 };
 
 #endif // _PRODUCT_REGISTRAR_H_

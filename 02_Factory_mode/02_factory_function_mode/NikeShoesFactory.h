@@ -18,7 +18,7 @@ class NikeShoesFactory : public ShoesFactory {
 public:
     NikeShoesFactory() = default;
     ~NikeShoesFactory() = default;
-    Shoes *CreateShoes();
+    Shoes *CreateShoes() override;
 };
 
 #endif

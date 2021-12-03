@@ -19,7 +19,7 @@ public:
     NikeShoes() = default;
     ~NikeShoes() = default;
 
-    void Show() const;
+    void Show() const override;
 };
 
 #endif

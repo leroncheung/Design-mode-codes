@@ -18,7 +18,7 @@ class NikeClothe : public Clothe {
 public:
     NikeClothe() = default;
     ~NikeClothe() = default;
-    void Show() const;
+    void Show() const override;
 };
 
 #endif

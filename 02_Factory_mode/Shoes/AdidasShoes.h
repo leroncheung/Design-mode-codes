@@ -19,7 +19,7 @@ class AdidasShoes : public Shoes
 public:
     AdidasShoes() = default;
     ~AdidasShoes() = default;
-    void Show() const;
+    void Show() const override;
 };
 
 #endif
