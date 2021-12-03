@@ -21,6 +21,8 @@ int main() {
     secretary.attach(&stkObs);
     secretary.action = "Boss Come";
     secretary.Notify();
+    secretary.action = "Go for lauch";
+    secretary.Notify();
 
     return 0;
 }

@@ -14,7 +14,7 @@
 #include "Subject.h"
 
 void NBAObserver::Update() {
-    std::cout << name << " has recived msg!" << std::endl;
+    std::cout << name << " has recived MSG: " << sub->action << std::endl;
     if (sub->action == "Boss Come") {
         std::cout << name << " turned off NBA games!" << std::endl;
     }
