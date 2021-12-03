@@ -14,15 +14,23 @@
 #include "StockObserver.h"
 
 int main() {
-    Secretary secretary;
-    NBAObserver nbaObs("Jim", &secretary);
-    StockObserver stkObs("Tom", &secretary);
-    secretary.attach(&nbaObs);
-    secretary.attach(&stkObs);
-    secretary.action = "Boss Come";
-    secretary.Notify();
-    secretary.action = "Go for lauch";
-    secretary.Notify();
+    Secretary *secretary = new Secretary();
+    NBAObserver *nbaObs = new NBAObserver("Jim", secretary);
+    StockObserver *stkObs = new StockObserver("Tom", secretary);
+    secretary->attach(nbaObs);
+    secretary->attach(stkObs);
+    secretary->action = "Boss Come";
+    secretary->Notify();
+    secretary->action = "Go for lauch";
+    secretary->Notify();
+    secretary->detach(nbaObs);
+    secretary->detach(stkObs);
+    delete nbaObs;
+    nbaObs = nullptr;
+    delete stkObs;
+    stkObs = nullptr;
+    delete secretary;
+    secretary = nullptr;
 
     return 0;
 }
