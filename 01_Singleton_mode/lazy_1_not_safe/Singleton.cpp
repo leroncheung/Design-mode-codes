@@ -19,6 +19,7 @@ Singleton *Singleton::GetInstance()
 {
     if (instance == nullptr)
     {
+        // 正常new失败时会抛出bad_alloc类型异常，使用nothrow后，如果分配内存失败，返回nullptr指针
         instance = new (std::nothrow) Singleton; // 线程不安全，可能多个线程同时进入
     }
     return instance;
