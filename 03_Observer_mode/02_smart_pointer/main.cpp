@@ -19,7 +19,7 @@ int main() {
     std::shared_ptr<Observer> stockObserver = std::make_shared<StockObserver>("Jerry");
     sub.RegisterObservers(nbaObserver);
     sub.RegisterObservers(stockObserver);
-    sub.Notify("Boss");
+    sub.Notify("boss");
     sub.Notify("Manager");
 
     return 0;
