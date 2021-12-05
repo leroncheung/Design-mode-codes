@@ -8,7 +8,7 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 // "${file}",
-                "${workspaceFolder}\\03_Observer_mode\\*.cpp",
+                "${workspaceFolder}\\03_Observer_mode\\02_smart_pointer\\*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
