@@ -22,6 +22,7 @@ public:
     // 使用weak_ptr，不占用所有权
     using ObserverPtr = std::weak_ptr<Observer>;
     // 默认的 operator< 不为弱指针定义，并且可能错误地认为同一对象的二个共享指针不等价
+    // set集合中保存观察者的弱引用（以ObserverPtr为关键字，基于ownership排序）
     using ObserverList = std::set<ObserverPtr, std::owner_less<ObserverPtr>>;
 
     Subject() = default;

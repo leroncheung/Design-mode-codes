@@ -29,8 +29,8 @@ void Subject::UnregisterObservers(const ObserverPtr& obsPtr) {
 void Subject::Notify(std::string leader) {
     std::lock_guard<std::mutex> lock(mMutex);
     std::shared_ptr<Observer> tempPtr;
-    for (auto it = begin(observers); it != end(observers); it++) {
-        if (tempPtr = it->lock()) {         // weak_ptr必须转换成shared_ptr，才可以访问指向的对象
+    for (auto& observerPtr : observers) {
+        if (tempPtr = observerPtr.lock()) {         // weak_ptr必须转换成shared_ptr，才可以访问指向的对象
             tempPtr->Update(leader);
         }
     }
