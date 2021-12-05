@@ -12,7 +12,7 @@
 #include <iostream>
 #include "NBAObserver.h"
 
-void NBAObserver::Update(std::string leader) {
+inline void NBAObserver::Update(std::string leader) {
     std::cout << name << " has recieved msg!" << std::endl;
     if (leader == "boss") {
         std::cout << name << " turned off NBA games!" << std::endl;

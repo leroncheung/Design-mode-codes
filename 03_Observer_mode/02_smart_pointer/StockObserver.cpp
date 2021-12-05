@@ -12,7 +12,7 @@
 #include <iostream>
 #include "StockObserver.h"
 
-void StockObserver::Update(std::string leader) {
+inline void StockObserver::Update(std::string leader) {
     std::cout << name << " has recieved msg!" << std::endl;
     if (leader == "boss")
     {
