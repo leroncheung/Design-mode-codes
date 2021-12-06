@@ -19,7 +19,7 @@ public:
     NBAObserver() = default;
     NBAObserver(std::string name) : Observer(name) {}
     ~NBAObserver() = default;
-    void Update(std::string);
+    void Update(std::string) override;
 };
 
 #endif

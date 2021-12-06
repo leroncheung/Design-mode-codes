@@ -19,7 +19,7 @@ public:
     StockObserver() = default;
     StockObserver(std::string name) : Observer(name) {}
     ~StockObserver() = default;
-    void Update(std::string);
+    void Update(std::string) override
 };
 
 #endif

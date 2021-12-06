@@ -13,7 +13,7 @@
 #include "StockObserver.h"
 #include "Subject.h"
 
-void StockObserver::Update() {
+inline void StockObserver::Update() {
     std::cout << name << " has recived MSG: " << sub->action << std::endl;
     if (sub->action == "Boss Come") {
         std::cout << name << " closed stock web pages!" << std::endl;
