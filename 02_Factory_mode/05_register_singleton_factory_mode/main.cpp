@@ -15,7 +15,7 @@
 
 int main() {
     // 该模式为模板工厂类的升级版
-    // 不再需要时刻管理其中的工厂对象或对象指针，只需要在一开始使用ProductRegister注册，之后如果需要再生产该类型产品
+    // 不再需要时刻管理其中的工厂对象或对象指针，只需要在一开始使用ProductRegistrar注册，之后如果需要再生产该类型产品
     // 只需要调用工厂类的GetProduct方法即可
     ProductRegistrar<Shoes, NikeShoes> productRegistrar("nike");
     Shoes *pNikeShoes = ProductFactory<Shoes>::Instance().GetProduct("nike");

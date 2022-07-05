@@ -20,4 +20,4 @@ public:
     void Update() override;
 };
 
-#endif
+#endif  // _NBA_OBSERVER_H_

@@ -8,7 +8,7 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 // "${file}",
-                "${workspaceFolder}\\03_Observer_mode\\03_function_callback\\*.cpp",
+                "${workspaceFolder}\\01_Singleton_mode\\lazy_4_call_once\\*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

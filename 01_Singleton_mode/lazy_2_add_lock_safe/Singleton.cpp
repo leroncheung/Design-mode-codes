@@ -12,30 +12,30 @@
 #include "Singleton.h"
 #include <iostream>
 
-Singleton *Singleton::instance = nullptr;
-std::mutex Singleton::mMutex;
+Singleton *Singleton::m_instance = nullptr;
+std::mutex Singleton::m_mutex;
 
-Singleton *Singleton::GetInstance()
+Singleton *Singleton::getInstance()
 {
-    if (instance == nullptr)
+    if (m_instance == nullptr)  // 双重判断，非最优解
     {
-        std::unique_lock<std::mutex> lock(mMutex); // 加锁
-        if (instance == nullptr)
+        std::unique_lock<std::mutex> lock(m_mutex); // 加锁
+        if (m_instance == nullptr)
         {
-            instance = new (std::nothrow) Singleton;
+            m_instance = new (std::nothrow) Singleton;
         }
     }
-    return instance;
+    return m_instance;
 }
 
-void Singleton::DeleteInstance()
+void Singleton::deleteInstance()
 {
-    std::unique_lock<std::mutex> lock(mMutex); // 加锁
-    if (instance != nullptr)
+    std::unique_lock<std::mutex> lock(m_mutex); // 加锁
+    if (m_instance != nullptr)
     {
-        delete instance;
-        instance = nullptr;
-        std::cout << "Delete instance" << std::endl;
+        delete m_instance;
+        m_instance = nullptr;
+        std::cout << "Delete m_instance" << std::endl;
     }
 }
 
@@ -46,8 +46,8 @@ inline void Singleton::func() const
 
 int main()
 {
-    Singleton::GetInstance()->func();
-    Singleton::DeleteInstance();
+    Singleton::getInstance()->func();
+    Singleton::deleteInstance();
 
     return 0;
 }

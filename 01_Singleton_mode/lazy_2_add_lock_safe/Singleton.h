@@ -16,8 +16,8 @@
 
 class Singleton {
 public:
-    static Singleton *GetInstance();
-    static void DeleteInstance();
+    static Singleton *getInstance();
+    static void deleteInstance();
 
     void func() const;
 
@@ -27,8 +27,8 @@ private:
     Singleton(const Singleton &) = delete;
     Singleton &operator=(const Singleton &) = delete;
 
-    static Singleton *instance;
-    static std::mutex mMutex;
+    static Singleton *m_instance;
+    static std::mutex m_mutex;
 };
 
 #endif

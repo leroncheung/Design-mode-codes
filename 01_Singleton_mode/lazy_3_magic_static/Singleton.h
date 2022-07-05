@@ -15,7 +15,7 @@
 class Singleton
 {
 public:
-    static Singleton &GetInstance(); // 引用返回
+    static Singleton &getInstance(); // 引用返回
 
     void func() const;
 
